@@ -86,7 +86,7 @@ body {
 
 .mry-text {
 	width: 100%;
-	font-size: 18px;
+	font-size: 20px;
 	line-height: 22px;
 	color: rgba(215, 215, 215, 0.8);
 }
@@ -1725,7 +1725,7 @@ blockquote:after {
 	background-color: #141414;
 	padding: 5px 10px;
 	text-decoration: none;
-	font-size: 11px;
+	font-size: 13px;
 	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: 2px;
@@ -1930,20 +1930,50 @@ blockquote:after {
 	opacity: 1;
 }
 
+/* Mapa */
+#map {
+	height: 100px;
+	width: 100%;
+	position: relative;
+}
+
+.mry-map-frame {
+	position: relative;
+	margin: 500; /* Eliminar márgenes */
+	height: 400px; /* Altura inicial */
+}
+
+.fullscreen {
+	height: 100vh;
+	width: 100vw;
+}
+
+.info-bar {
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	color: #e6e6e6;
+	transform: translateX(-50%);
+	background-color: #141414;
+	padding: 10px;
+	border-radius: 5px;
+}
+/* Fin mapa */
+
 .mapboxgl-marker:after {
 	position: absolute;
-	content: 'Mireya';
+	content: 'Remodelaciones MM';
 	letter-spacing: 2px;
 	transform: translateX(-30%) translateY(10px);
 	display: block;
-	color: #fff;
+	color: #e6e6e6;
 	font-weight: 800;
 	text-transform: uppercase;
 	font-size: 10px;
 	padding: 1px 10px;
 	white-space: nowrap;
 	text-align: center;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: #141414;
 	border-radius: 10px;
 }
 

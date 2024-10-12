@@ -40,12 +40,12 @@ if ($_POST['firstName'] != '') {
 	$_POST['firstName'] = filter_var($_POST['firstName'], FILTER_SANITIZE_STRING);
 
 	if ($_POST['firstName'] == '') {
-		$errors .= 'Please enter a valid name.<br/>';
+		$errors .= 'Por favor, ingresa un nombre válido.<br/>';
 	}
 }
 else { 
 	// Required to fill
-	$errors .= 'Please enter your name.<br/>';
+	$errors .= 'Por favor, ingresa tu nombre.<br/>';
 }
 
 // Name 
@@ -55,12 +55,12 @@ if ($_POST['lastName'] != '') {
 	$_POST['lastName'] = filter_var($_POST['lastName'], FILTER_SANITIZE_STRING);
 
 	if ($_POST['lastName'] == '') {
-		$errors .= 'Please enter a valid name.<br/>';
+		$errors .= 'Por favor, ingresa un apellido válido.<br/>';
 	}
 }
 else { 
 	// Required to fill
-	$errors .= 'Please enter your name.<br/>';
+	$errors .= 'Por favor, ingresa tu apellido.<br/>';
 }
 
 // Email 
@@ -73,12 +73,12 @@ if ($_POST['email'] != '') {
 	$_POST['email'] = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
 	
 	if($_POST['email'] == '') {
-		$errors .= 'Please enter a valid email address.<br/>';
+		$errors .= 'Por favor, ingresa una dirección de correo válida.<br/>';
 	}
 }
 else {
 	// Required to fill
-	$errors .= 'Please enter your email address.<br/>';
+	$errors .= 'Por favor, ingresa tu dirección de correo.<br/>';
 }
 
 // Phone 
@@ -92,7 +92,7 @@ if ($_POST['phone'] != '') {
 	$_POST['phone'] = filter_var($_POST['phone'], FILTER_VALIDATE_REGEXP, $pattern_phone);
 	
 	if($_POST['phone'] == '') {
-		$errors .= 'Please enter a valid phone number like: +363012345<br/>';
+		$errors .= 'Por favor, ingresa un número de teléfono válido, como: +363012345<br/>';
 	}
 }
 
@@ -103,7 +103,7 @@ if ($_POST['message'] != '') {
 	$_POST['message'] = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 	
 	if($_POST['message'] == '') {
-		$errors .= 'Please enter a valid message.<br/>';
+		$errors .= 'Por favor, ingresa un mensaje válido.<br/>';
 	}
 }
 
@@ -121,7 +121,7 @@ if (!$errors) {
 	==================================== */
 
 	// Setup for site owner
-	$to = "websolutions.ultimate@gmail.com"; // Your email goes here	
+	$to = "eneye280@gmail.com"; // Your email goes here	
 	$subject = "Request";
 	$headers = "From: Remodelaciones MM <info@remodelacionesmm.com>";	
 	$message = "Request is arrived with the details below." . "\n\n";

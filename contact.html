@@ -21,6 +21,7 @@
 	<link href="css/plugins/mapbox-style.css" rel='stylesheet'>
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style-dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
 	<title>Remodelaciones MM / Contáctanos</title>
 
@@ -33,11 +34,11 @@
 		<!-- preloader -->
 		<div class="mry-preloader mry-active">
 			<div class="mry-preloader-content">
-				<img class="mry-logo mry-mb-20" src="img/dark/logo.svg" alt="Mireya">
+				<img class="mry-logo mry-mb-20" src="img/dark/logo-black.svg" alt="Remodelaciones MM">
 				<div class="mry-loader-bar">
 					<div class="mry-loader"></div>
 				</div>
-				<div class="mry-label">Espere por favor</div>
+				<div class="mry-label">Cargando...</div>
 			</div>
 		</div>
 		<!-- preloader end -->		
@@ -61,7 +62,7 @@
 		<div class="mry-top-panel">
 			<div class="mry-logo-frame">
 				<a href="index.html" class="mry-default-link mry-anima-link">
-					<img class="mry-logo" src="img/dark/logo.svg" alt="Mireya">
+					<img class="mry-logo" src="img/dark/logo.svg" alt="Remodelaciones MM">
 				</a>
 			</div>
 			<div class="mry-menu-button-frame">
@@ -83,21 +84,24 @@
 					<div class="col-md-4">
 						<nav id="mry-dynamic-menu">
 							<ul>
-								<li class="menu-item menu-item-has-children"><a href="#." class="mry-default-link">Inicio</a>
-									<ul class="sub-menu">
-										<li class="menu-item"><a href="index.html" class="mry-anima-link mry-default-link">Ir al inicio</a></li>
-										<li class="menu-item"><a href="project.html" class="mry-anima-link mry-default-link">Galería</a></li>
-									</ul>
+								<li class="menu-item"><a href="index.html" class="mry-anima-link mry-default-link">Inicio</a></li>
+									<!-- <li class="menu-item menu-item-has-children current-menu-item"><a href="#." class="mry-default-link">Inicio</a> -->
+									<!-- <ul class="sub-menu">
+										<li class="menu-item"><a href="index.html" class="mry-anima-link mry-default-link">Ir al inicio</a></li> -->
+										<!-- <li class="menu-item"><a href="project.html" class="mry-anima-link mry-default-link">Galería</a></li> -->
+									<!-- </ul> -->
 								</li>
 								<li class="menu-item"><a href="about.html" class="mry-anima-link mry-default-link">Sobre nosotros</a></li>
-								<li class="menu-item menu-item-has-children"><a href="#." class="mry-default-link">Nuestro trabajo</a>
-									<ul class="sub-menu">
-										<li class="menu-item"><a href="portfolio-grid-1.html" class="mry-anima-link mry-default-link">Apartamentos en Rionegro</a></li>
-										<li class="menu-item"><a href="portfolio-grid-2.html" class="mry-anima-link mry-default-link">Mansión Llanogrande</a></li>
-										<li class="menu-item"><a href="portfolio-box-1.html" class="mry-anima-link mry-default-link">Aeropuerto de Nuquí</a></li>
-										<li class="menu-item"><a href="portfolio-box-2.html" class="mry-anima-link mry-default-link">Parcelación viento libre</a></li>
+								<!-- <li class="menu-item menu-item-has-children"><a href="#." class="mry-default-link">Nuestro trabajo</a> -->
+								<li class="menu-item"><a href="portfolio-grid-1.html" class="mry-anima-link mry-default-link">Galería</a></li>
+
+									<!-- <ul class="sub-menu">
+										<li class="menu-item"><a href="portfolio-grid-2.html" class="mry-anima-link mry-default-link">Penthouse Laureles</a></li>
+										<li class="menu-item"><a href="portfolio-grid-2.html" class="mry-anima-link mry-default-link">Casa finca en panamá</a></li>
+										<li class="menu-item"><a href="portfolio-grid-1.html" class="mry-anima-link mry-default-link">Apartamentos en Rionegro (En desarrollo)</a></li>
+										<li class="menu-item"><a href="portfolio-box-2.html" class="mry-anima-link mry-default-link">Parcelación viento libre (En desarrollo)</a></li>
 										<li class="menu-item"><a href="project.html" class="mry-anima-link mry-default-link">Ver más</a></li>
-									</ul>
+									</ul> -->
 								</li>
 								<li class="menu-item"><a href="contact.html" class="mry-anima-link mry-default-link">Contáctanos</a></li>
 								<!-- <li class="menu-item menu-item-has-children"><a href="#." class="mry-default-link">Blog</a>
@@ -127,7 +131,7 @@
 								</div>
 								<div class="mry-mb-20">
 									<div class="mry-label mry-mb-5">Email:</div>
-									<a class="mry-text mry-default-link" href="mailto:mireya.inbox@mail.com">info@remodelacionesmm.com</a>
+									<a class="mry-text" href="mailto:info@remodelacionesmm.com">info@remodelacionesmm.com</a>
 								</div>
 								<div>
 									<div class="mry-label mry-mb-5">Contáctanos:</div>
@@ -218,22 +222,18 @@
 							</div>
 
 							<div class="col-lg-8">
-
 								<form method="POST" id="form" class="mry-form mry-mb-100" action="send.php">
-
 									<div class="row">
 										<div class="col-lg-6">
 											<label class="mry-label mry-fo" for="firstName">Primer nombre</label>
-											<div class="mry-fo"><input id="firstName" name="firstName" placeholder="Agrega tú Nombre" class="mry-default-link" type="text" data-parsley-pattern="^[a-zA-Z\s.]+$" required>
-											</div>
+											<div class="mry-fo"><input id="firstName" name="firstName" placeholder="Agrega tú Nombre" class="mry-default-link" type="text" data-parsley-pattern="^[a-zA-Z\s.]+$" required></div>
 										</div>
 										<div class="col-lg-6">
 											<label class="mry-label mry-fo" for="lastName">Apellido</label>
-											<div class="mry-fo"><input id="lastName" name="lastName" placeholder="Agrega tú Apellido" class="mry-default-link" type="text" data-parsley-pattern="^[a-zA-Z\s.]+$" required>
-											</div>
+											<div class="mry-fo"><input id="lastName" name="lastName" placeholder="Agrega tú Apellido" class="mry-default-link" type="text" data-parsley-pattern="^[a-zA-Z\s.]+$" required></div>
 										</div>
 									</div>
-
+							
 									<div class="row">
 										<div class="col-lg-6">
 											<label class="mry-label mry-fo" for="email">Correo</label>
@@ -244,12 +244,11 @@
 											<div class="mry-fo"><input id="phone" name="phone" placeholder="Agrega tú número" class="mry-default-link" type="text" data-parsley-pattern="^\+{1}[0-9]+$"></div>
 										</div>
 									</div>
-
+							
 									<div class="mry-fade-object">
 										<label class="mry-label mry-fo" for="message">Mensaje</label>
 										<div class="mry-fo">
-											<textarea id="message" name="message" rows="8" cols="80" placeholder="Redacta tu información" class="mry-default-link" type="text"
-												data-parsley-pattern="^[a-zA-Z0-9\s.:,!?']+$" required></textarea>
+											<textarea id="message" name="message" rows="8" cols="80" placeholder="Redacta tu información" class="mry-default-link" data-parsley-pattern="^[a-zA-Z0-9\s.:,!?']+$" required></textarea>
 										</div>
 									</div>
 									<div class="row align-items-center">
@@ -257,13 +256,12 @@
 											<div class="mry-fo"><button type="submit" class="mry-btn mry-default-link">Enviar mensaje</button></div>
 										</div>
 										<div class="col-lg-8">
-											<p class="mry-text mry-simple-text mry-contact-hint mry-fo"><span class="mry-color-text">*</span> Garantizamos la confidencialidad de su información personal, 
-												asegurando que no será compartida con terceros.</p>
+											<p class="mry-text mry-simple-text mry-contact-hint mry-fo"><span class="mry-color-text">*</span> Garantizamos la confidencialidad de su información personal, asegurando que no será compartida con terceros.</p>
 										</div>
 									</div>
 								</form>
-
 							</div>
+							
 
 							<div class="col-lg-12">
 
@@ -278,15 +276,41 @@
 							</div>
 
 							<div class="col-lg-10">
-
 								<div class="mry-map-frame mry-mb-100 mry-fo">
-									<div id='map-dark' class="mry-map mry-map-dark"></div>
-									<div class="mry-lock mry-magnetic-link"><i class="fas fa-lock mry-magnetic-object"></i></div>
-									<div class="mry-curtain"></div>
+									<iframe
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.7982455833005!2d-75.57933608466948!3d6.246429395001097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442926052e157b%3A0x8a337f4bc18180ae!2sCarrera%2050%20%2321-41%2C%20Medell%C3%ADn%2C%20Antioquia%2C%20Colombia!5e0!3m2!1ses!2sus!4v1697141240931!5m2!1ses!2sus"
+										width="100%"
+										height="400"
+										style="border:0;"
+										allowfullscreen=""
+										loading="lazy">
+									</iframe>
+									<div class="info-bar" id="info-bar">Ubicación: Carrera 50 # 21-41, Medellín</div>
+									<button id="fullscreen-button" onclick="toggleFullscreen()">Expandir Mapa</button>
 								</div>
-
 							</div>
-
+							
+							<script>
+								function toggleFullscreen() {
+									const mapFrame = document.querySelector('.mry-map-frame');
+									const iframe = mapFrame.querySelector('iframe');
+							
+									if (!document.fullscreenElement) {
+										mapFrame.requestFullscreen().then(() => {
+											iframe.style.height = '100vh'; // Altura completa de la ventana
+										}).catch(err => {
+											console.error(`Error al intentar entrar en modo pantalla completa: ${err.message}`);
+										});
+									} else {
+										document.exitFullscreen().then(() => {
+											iframe.style.height = '400px'; // Restablecer altura
+											mapFrame.style.height = '400px'; // Asegurarse de que el contenedor también tenga altura
+										}).catch(err => {
+											console.error(`Error al intentar salir del modo pantalla completa: ${err.message}`);
+										});
+									}
+								}
+							</script>					
 						</div>
 					</div>
 				</div>
@@ -303,18 +327,18 @@
 								<a href="contact.html" class="mry-anima-link mry-btn mry-btn-color mry-default-link">Let's discuss</a>
 								<a href="portfolio-grid-1.html" class="mry-anima-link  mry-btn-text mry-default-link">Portfolio</a>
 							</div>
-						</div> -->
-					<!-- </div> -->
+						</div>
+					</div> -->
 					<div class="mry-footer-copy">
 						<div class="container">
 							<div>Remodelaciones MM © 2024<br> Todos los derechos reservados</div>
 							<ul class="mry-social">
-								<li><a href="#."><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="#."><i class="fab fa-instagram"></i></a></li>
+								<li><a href="https://www.facebook.com/share/g/2vNgXxXmBV6AwFo8/?mibextid=K35XfP"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="https://www.instagram.com/remodelaciones_mm/profilecard/?igsh=MWQyazJqbHBpZ3hiMw=="><i class="fab fa-instagram"></i></a></li>
 								<!-- <li><a href="#."><i class="fab fa-behance"></i></a></li> -->
 								<!-- <li><a href="#."><i class="fab fa-dribbble"></i></a></li> -->
 							</ul>
-							<div>Por: <a href="https://themeforest.net/user/ultimatewebsolutions/" class="mry-default-link" target="_blank">Eneye Company</a></div>
+							<div>Por: <a href="https://eneyecompany.com" class="mry-default-link" target="_blank">Eneye Company</a></div>
 						</div>
 					</div>
 				</footer>
